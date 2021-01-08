@@ -1,3 +1,13 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1024px,
+  xxl: 1440px
+);
+
+
 :root{
     //Primary
     --Very-Dark-Magenta: hsl(300, 43%, 22%);
@@ -18,6 +28,15 @@ body{
     font-family: var(--font-family);
     font-size: var(--Font-size);
 }
+
+h1{
+    text-align: center;
+}
+
+h6{
+    text-align: center;
+}
+
 
 .f-primary{
     color: var(--Very-Dark-Magenta);
@@ -57,9 +76,90 @@ body{
     margin: 12px;
 }
 
-
-.img-profile{
+.img-profile {
     height: 40px;
+}
+
+.quotes{
+    font-weight: lighter;
+}
+
+
+@media(min-width:1024px){
+    h1{
+        text-align: start!important;
+    }
+
+    h6{
+        text-align: start!important;
+    }
+    
+    
+    .card-rate{
+        width: 450px!important;
+        flex-direction:row;
+        display:flex;
+    }
+
+
+    .card-quote{
+        height: 200px!important;
+    }
+
+    .w-max{
+        max-width: 572px!important;
+    }
+
+    .started{
+        display:flex;
+        justify-content: flex-start;
+    }
+
+    .centered{
+        display:flex;
+        justify-content:center;
+    }
+
+    .ended{
+        display:flex;
+        justify-content: flex-end;
+    }
+
+    .quotes{
+        margin-top: 50px;
+    }
+
+    .card-quote{
+        height: 100%!important;
+    }
+}
+
+
+@media (min-width: 1440px) {
+
+    .container{
+        margin: 20px!important;
+        margin-left: 120px!important;
+        
+    }
+
+    h1{
+        text-align: start!important;
+        font-size: 48px!important;
+    }
+
+    h6{
+        text-align: start!important;
+    }
+    
+    .pr-xxl-1{
+        padding-right: 80px!important;
+    }
+
+    .quotes{
+        max-width: 1100px!important;
+    }
+
 }
 
 
