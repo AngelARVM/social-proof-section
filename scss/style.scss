@@ -14,11 +14,53 @@
     --Font-size: 15px;
 }
 
+body{
+    font-family: var(--font-family);
+    font-size: var(--Font-size);
+}
+
+.f-primary{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+.f-secondary{
+    color: var(--Soft-Pink);
+    font-weight: 400;
+}
+
+.f-neutral{
+    color: var(--Dark-Grayish-Magenta);
+    font-weight: 500;
+}
+
+.card{
+    border: none;
+    border-radius: 8px!important;
+}
+
+.card-rate{
+    background-color: var(--Light-Grayish-Magenta)!important;
+    border: none!important;
+}
+
+.stars{
+    display:block;
+}
+
+.card-qoute{
+    background-color: var(--Very-Dark-Magenta)!important;
+    color: var(--White);
+}
+
+.card-body{
+    margin: 12px;
+}
 
 
-
-
-
+.img-profile{
+    height: 40px;
+}
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
